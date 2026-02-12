@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Lifestyle Pulse — Insight, Catatan, & Referensi Harian</title>
+  <meta name="description" content="Lifestyle Pulse menyajikan catatan ringan seputar gaya hidup modern, kebiasaan harian, dan referensi bacaan terkurasi." />
+  <link rel="canonical" href="https://lifestylepulse.site/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0f172a;
+      --card:rgba(255,255,255,.06);
+      --line:rgba(255,255,255,.12);
+      --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.70);
+      --accent:#38bdf8;
+      --accent2:#22c55e;
+      --shadow:0 16px 40px rgba(0,0,0,.35);
+      --r:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:
+        radial-gradient(900px 500px at 10% -10%, rgba(56,189,248,.18), transparent 60%),
+        radial-gradient(900px 500px at 90% 0%, rgba(34,197,94,.14), transparent 60%),
+        var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .container{max-width:980px;margin:0 auto;padding:0 18px}
+
+    /* Header */
+    header{
+      padding:42px 0 28px;
+      border-bottom:1px solid var(--line);
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+    .logo{
+      width:44px;height:44px;border-radius:14px;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      box-shadow:0 12px 30px rgba(56,189,248,.35);
+    }
+    h1{
+      margin:0;
+      font-family:"Playfair Display",serif;
+      font-size:clamp(28px,3.2vw,46px);
+      line-height:1.05;
+    }
+    .subtitle{
+      margin-top:10px;
+      max-width:70ch;
+      color:var(--muted);
+      line-height:1.7;
+      font-size:14.5px;
+    }
+
+    /* Card */
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.04));
+      border:1px solid var(--line);
+      border-radius:var(--r);
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(10px);
+    }
+    .section{padding:18px}
+    @media(min-width:768px){.section{padding:24px}}
+
+    h2{
+      margin:0 0 10px;
+      font-size:clamp(18px,2.2vw,28px);
+      font-weight:800;
+    }
+    p{
+      margin:0 0 12px;
+      color:var(--muted);
+      line-height:1.75;
+      font-size:14.5px;
+    }
+
+    blockquote{
+      margin:14px 0;
+      padding:14px 16px;
+      border-left:4px solid var(--accent);
+      background:rgba(0,0,0,.18);
+      border-radius:14px;
+      font-weight:700;
+      color:rgba(255,255,255,.9);
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:12px;
+    }
+    @media(min-width:900px){.grid{grid-template-columns:1fr 1fr}}
+
+    /* Links */
+    .links{
+      list-style:none;
+      padding:0;
+      margin:12px 0 0;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:10px;
+    }
+    @media(min-width:640px){.links{grid-template-columns:1fr 1fr}}
+    @media(min-width:900px){.links{grid-template-columns:1fr 1fr 1fr}}
+
+    .links li a{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(0,0,0,.18);
+      font-weight:800;
+      text-decoration:none;
+    }
+    .links li a:after{content:"↗";opacity:.6}
+
+    footer{
+      margin-top:26px;
+      padding:18px 0 26px;
+      text-align:center;
+      font-size:12px;
+      color:rgba(255,255,255,.55);
+      border-top:1px solid var(--line);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <div class="brand">
+      <div class="logo"></div>
+      <h1>Lifestyle Pulse</h1>
+    </div>
+    <p class="subtitle">
+      Catatan singkat tentang gaya hidup modern, kebiasaan harian, dan cara menyaring informasi agar tetap relevan di tengah arus data.
+    </p>
+  </div>
+</header>
+
+<main class="container" style="padding:26px 0">
+
+  <section class="card section" id="artikel">
+    <h2>Menjaga Ritme Hidup di Era Informasi Cepat</h2>
+
+    <div class="grid">
+      <div class="card section" style="box-shadow:none">
+        <h2 style="font-size:18px">1) Pilih Informasi, Bukan Semua</h2>
+        <p>
+          Terlalu banyak konsumsi informasi justru membuat fokus menurun.
+          Biasakan memilih sumber yang konsisten dan relevan dengan kebutuhan pribadi.
+        </p>
+      </div>
+
+      <div class="card section" style="box-shadow:none">
+        <h2 style="font-size:18px">2) Buat Catatan Ringkas</h2>
+        <p>
+          Catatan singkat membantu otak menyimpan inti informasi.
+          Satu paragraf ringkasan sering lebih berguna daripada puluhan tab terbuka.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid" style="margin-top:12px">
+      <div class="card section" style="box-shadow:none">
+        <h2 style="font-size:18px">3) Konsistensi Lebih Penting</h2>
+        <p>
+          Rutinitas kecil yang konsisten jauh lebih berdampak dibanding perubahan besar yang jarang dilakukan.
+        </p>
+      </div>
+
+      <div class="card section" style="box-shadow:none">
+        <h2 style="font-size:18px">4) Saring, Lalu Simpan</h2>
+        <p>
+          Simpan referensi yang benar-benar berguna.
+          Dengan begitu, pencarian ulang di masa depan menjadi lebih cepat dan terarah.
+        </p>
+      </div>
+    </div>
+
+    <blockquote>
+      Gaya hidup modern bukan tentang kecepatan, tapi tentang ketepatan memilih.
+    </blockquote>
+  </section>
+
+  <section class="card section" id="referensi" style="margin-top:14px">
+    <h2>Referensi & Tautan</h2>
+    <p>Kumpulan referensi eksternal yang sering dijadikan rujukan.</p>
+
+    <ul class="links">
+      <li><a href="https://datahklotto.us/" target="_blank" rel="noopener">Data HK Lotto</a></li>
+      <li><a href="http://178.128.52.7/" target="_blank" rel="noopener">Data SDY Lotto</a></li>
+      <li><a href="https://pafiairseruk.org/" target="_blank" rel="noopener">Data HK</a></li>
+      <li><a href="http://178.128.89.94/" target="_blank" rel="noopener">Data SGP</a></li>
+      <li><a href="https://pafitanglad.org/" target="_blank" rel="noopener">Data SDY</a></li>
+      <li><a href="https://lamarsalaplayadegandia.com/" target="_blank" rel="noopener">Data HK</a></li>
+      <li><a href="http://159.223.35.146/" target="_blank" rel="noopener">Data SDY Lotto</a></li>
+      <li><a href="https://wholesalejerseys4sale.com/" target="_blank" rel="noopener">Prediksi Keluaran</a></li>
+      <li><a href="https://pafibenermeriahkabupaten.org/" target="_blank" rel="noopener">Prediksi Jitu</a></li>
+      <li><a href="http://178.128.116.128/" target="_blank" rel="noopener">Prediksi SDY</a></li>
+      <li><a href="https://prediksihkpools.net/" target="_blank" rel="noopener">Prediksi HK</a></li>
+      <li><a href="http://178.128.215.158/" target="_blank" rel="noopener">Angkanet</a></li>
+      <li><a href="http://178.128.21.45/" target="_blank" rel="noopener">Angkanet Result</a></li>
+      <li><a href="https://pafipcgunungkidulkab.org/" target="_blank" rel="noopener">Data HK 6D</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 lifestylepulse.site — Lifestyle Notes & Reference
+</footer>
+
+</body>
+</html>
